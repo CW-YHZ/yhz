@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Web Socket</title>
+    </head>
+    <body>
+        Welcome<br/>
+        <input id="text" type="text"/>
+        <button onclick="send()">Send</button>
+        <button onclick="closeWebSocket()">Close</button>
+        <div id="message">
+        </div>
+    </body>
+
+    <!--web socket-->
+    <script src="js/WebSocket.js"></script>
+    <script>
+        webSocket("ws://localhost:8080/wsdemo", null, function (data) {
+            document.getElementById('message').innerHTML += data + '<br/>';
+        });
+    </script>
+</html>

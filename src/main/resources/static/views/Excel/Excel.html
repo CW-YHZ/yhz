@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>excel 导入导出</title>
+</head>
+<body>
+<!--导入-->
+<div class="form-group" id="thumbnailUploadContainer" class="col-sm-10" style="float: left; margin-right: 50px;">
+    <input id="articleImageFile" name="excelFile" type="file" class="form-control"
+           style="width: 300px; display: inline;"/>
+    <input id="saveZipButton" type="button" style="width: 60px;height: 35px;" value="上传"/>
+</div>
+</body>
+<script src="../../js/jquery-3.3.1.min.js"></script>
+<script>
+    (function ($, doc) {
+        $("#saveZipButton").on('click', function () {
+            var formData = new FormData();
+            var name = $("#articleImageFile").val();
+            formData.append("file", $("#articleImageFile")[0].files[0]);
+            formData.append("name", name);//这个地方可以传递多个参数
+            $.ajax({
+                url: '/excel/getReadExports',
+                type: 'POST',
+                async: false,
+                data: formData,
+                // 告诉jQuery不要去处理发送的数据
+                processData: false,
+                // 告诉jQuery不要去设置Content-Type请求头
+                contentType: false,
+                beforeSend: function () {
+                    console.log("正在进行，请稍候");
+                },
+                success: function (result) {
+                    if (result.code == 200) {
+                        alert(result.message);
+                    } else {
+                        alert(result.message);
+                    }
+                }
+            });
+        });
+    }(jQuery, document));
+</script>
+</html>
