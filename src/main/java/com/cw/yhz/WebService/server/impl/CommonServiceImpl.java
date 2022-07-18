@@ -1,8 +1,8 @@
 package com.cw.yhz.WebService.server.impl;
 
 
-import com.ouhl.utildemo.WebService.pojo.User;
-import com.ouhl.utildemo.WebService.server.ICommonService;
+import com.cw.yhz.WebService.pojo.User;
+import com.cw.yhz.WebService.server.ICommonService;
 import org.springframework.stereotype.Component;
 
 import javax.jws.WebService;

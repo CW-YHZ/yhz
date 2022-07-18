@@ -1,7 +1,7 @@
 package com.cw.yhz.WebService.conf;
 
 
-import com.ouhl.utildemo.WebService.server.ICommonService;
+import com.cw.yhz.WebService.server.ICommonService;
 import org.apache.cxf.Bus;
 import org.apache.cxf.jaxws.EndpointImpl;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,10 +1,11 @@
 package com.cw.yhz.Lambda;
 
+import com.cw.yhz.WebService.pojo.User;
 import com.google.common.collect.Lists;
-import com.ouhl.utildemo.WebService.pojo.User;
 import org.junit.jupiter.api.Test;
 
-import java.util.*;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**

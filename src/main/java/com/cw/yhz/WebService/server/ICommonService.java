@@ -1,6 +1,6 @@
 package com.cw.yhz.WebService.server;
 
-import com.ouhl.utildemo.WebService.pojo.User;
+import com.cw.yhz.WebService.pojo.User;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;

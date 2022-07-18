@@ -1,7 +1,7 @@
 package com.cw.yhz.WebService.test;
 
-import com.ouhl.utildemo.WebService.pojo.User;
-import com.ouhl.utildemo.WebService.server.ICommonService;
+import com.cw.yhz.WebService.pojo.User;
+import com.cw.yhz.WebService.server.ICommonService;
 import org.apache.cxf.endpoint.Client;
 import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
 import org.apache.cxf.jaxws.endpoint.dynamic.JaxWsDynamicClientFactory;
