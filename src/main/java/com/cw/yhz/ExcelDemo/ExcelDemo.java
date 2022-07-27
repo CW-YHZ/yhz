@@ -9,10 +9,6 @@ import com.cw.yhz.ExcelDemo.utils.DictUtils;
 import com.cw.yhz.ExcelDemo.utils.ExcelFillCellMergeStrategy;
 import com.cw.yhz.ExcelDemo.utils.ExcelUtil;
 import com.cw.yhz.ExcelDemo.utils.StringUtils;
-import lombok.extern.java.Log;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Update;
-import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,9 +18,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
-import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @RestController

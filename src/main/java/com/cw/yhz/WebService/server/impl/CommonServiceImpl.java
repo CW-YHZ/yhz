@@ -11,8 +11,8 @@ import javax.jws.WebService;
  * web service 实现类
  */
 @WebService(serviceName = "CommonService", // 与接口中指定的name一致
-        targetNamespace = "http://server.WebService.utildemo.ouhl.com/", // 与接口中的命名空间一致,一般是接口的包名倒
-        endpointInterface = "com.ouhl.utildemo.WebService.server.ICommonService"// 接口地址
+        targetNamespace = "http://server.WebService.utildemo.yhz.com/", // 与接口中的命名空间一致,一般是接口的包名倒
+        endpointInterface = "com.yhz.utildemo.WebService.server.ICommonService"// 接口地址
 )
 @Component
 public class CommonServiceImpl implements ICommonService {

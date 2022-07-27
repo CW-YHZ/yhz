@@ -33,11 +33,11 @@ public class CxfConfig {
     /**
      * JAX-WS
      **/
-    @Bean
-    public Endpoint endpoint() {
-        EndpointImpl endpoint = new EndpointImpl(bus, commonService);
-        endpoint.publish("/CommonService");
-        return endpoint;
-    }
+//    @Bean
+//    public Endpoint endpoint() {
+//        EndpointImpl endpoint = new EndpointImpl(bus, commonService);
+//        endpoint.publish("/CommonService");
+//        return endpoint;
+//    }
 
 }

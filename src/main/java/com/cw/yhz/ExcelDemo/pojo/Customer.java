@@ -163,6 +163,5 @@ public class Customer extends BaseEntity {
     private String factoryCode;
 
 
-    private List<CustomerMaterial> customerMaterialList;
 
 }
